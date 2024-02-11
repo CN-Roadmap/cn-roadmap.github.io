@@ -15,10 +15,10 @@
   <!-- nave bar should have click able drop downs-->
   <header>
     <a href="index.html">
-      <img class="img-logo" src="assets/logo.png" alt="Local Connectivity Lab Logo">
+      <img class="img-logo" src="assets/maintenance-icon.png" alt="Logo">
     </a>
     <h1>
-      <a id="landing-link" href="index.html"> Community Network Roadmap </a>
+      <a id="landing-link" href="index.html"> Community Network Roadmap [Site Under Construction] </a>
     </h1>
   </header>
 
@@ -33,48 +33,60 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
+          <!-- Commenting out extra page while not ready </li>
           <li class="nav-item">
-            <a class="nav-link" href="aboutUs.html">About Us</a>
+		  <a class="nav-link" href="aboutUs.html">About Us</a>-->
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-
-  <!-- city graphic
+  <!-- page graphic -->
   <div class="img-wrapper">
-    <img id="city-graphic" src="assets/City Graphic.png" alt="image of buildings">
-  </div> -->
-  <!--about us section, tan background, -->
+    <button onclick="window.open('assets/latest.pdf')" type="button" id="learn-more-button">
+      Get Latest Version &rarr;
+    </button>
+    <img id="city-graphic" src="assets/front-page.png" alt="image of roadmap front page">
+  </div> 
+
+  <!--tan background section-->
   <div class="landing-tan" style="margin-top: 100px;">
     <h2> Community Network Roadmap </h2>
     <p>
-    BLURB HERE
+The Community Network Roadmap is a tool designed to help communities create their own broadband network solutions for connectivity. From community organizing, to network planning, building out the network, technical training, organizational stability, community inclusivity and accountability, and growing the network into a long-term, sustainable enterprise, this roadmap offers a comprehensive guide for the community network development process.
     </p>
-    <button onclick="location.href='https://docs.seattlecommunitynetwork.org/'" type="button" id="learn-more-button">
-      BUTTON &rarr;
-    </button>
-  </div>
+  </div> 
 
+  <!--get involved buttons-->
   <div>
-    <h2> Get Involved </h2>
-    <!--take breaks out later -->
     <br><br>
     <div class="flex-container">
-      <button onclick="location.href='https://bit.ly/roadmap-updates'" type="button"
+      <button onclick="location.href='https://communitynetworks.group'" type="button"
         id="volunteer-learn-button">
-        GitHub Repo &rarr;
+        Join the CN Community &rarr;
       </button>
 
-      <button onclick="location.href='https://communitynetworks.group/'" type="button" id="get-connected-button">
-        Join the Community &rarr;
+      <button onclick="location.href='https://bit.ly/roadmap-updates'" type="button" id="get-connected-button">
+        Add Your Comments &rarr;
       </button>
     </div>
-    <br>
   </div>
 
+  <!--acknowledgements-->
+  <div class="landing-tan" style="margin-top: 100px;">
+    <h2> Acknowledgements </h2>
+    <p>
+Thank you to the Seattle Community Network, NYC Mesh, Detroit Community Technology Project, AlterMundi and QuintanaLibre, Rhizomatica and Telecomunicaciones Indígenas Comunitarias AC, and the many other community networks around the world who have informed and inspired us in the making of this guide. Especial thanks to our research collaborators Nicolás Pace and Philip Garrison with whom we shared formative discussions and field work.
+    </p>
+    <p>
+Thank you to the University of Washington, especially the members of the Information and Communications Technology for Development (ICTD) Lab; the Local Connectivity Lab; Internet Society; Institute for Local Self–Reliance; Network Startup Resource Center; and other organizations who provide resources, support, knowledge,
+and advocacy on behalf of community networks as a whole.
+    </p>
+    <p>
+The Community Network Roadmap was made possible with funding from the Social Sciences and Humanities Research Council (SSHRC) of Canada.
+    </p>
+  </div>
 
   <!-- FOOTER -->
   <div class="footer">
@@ -82,27 +94,34 @@
       <div class="flex-item-left">
         <h3> Contact Us </h3>
         <p class="footer-text">
-	cnroadmap@gmail.com
+	<ul>
+		<li>Email: cnroadmap AT gmail.com</li>
+		<li>Email: michael.lithgow AT athabascau.ca</li>
+	</ul>
         </p>
         <br><br>
       </div>
 
       <div class="flex-item-left">
-        <h3> Acknowledgements </h3>
+        <h3> Authors </h3>
         <p class="footer-text">
-        ACKNOWLEDGEMENTS HERE
+	<ul>
+		<li><a href="https://www.athabascau.ca/humanities-and-social-sciences/our-people/michael-lithgow.html">Dr. Michael Lithgow, Athabasca University</a>: Project Coordination/Content Author</li>
+		<li><a href="https://estherjang.com">Esther Jang, PhD Candidate, University of Washington</a>: Technical Consultant/Content Author</li>
+		<li><a href="https://www.shraddhakumbhar.com">Shraddha Kumbar, MDes (Interaction Design)</a>: Information Designer</li>
+		<li><a href="http://gillieson.ca">Dr. Katherine Gillieson, Emily Carr University of Art + Design</a>: Design Consultant</li>
+	</ul>
         </p>
       </div>
 
       <div class="flex-item-left">
-        <button onclick="location.href='https://discord.gg/gn4DKF83bP'" id="subscribe-button">
-          &nbsp; SCN Discord Server &nbsp;
+        <button
+          onclick="location.href='https://bit.ly/globalcn'" id="subscribe-button">
+          Add your CN!
         </button>
         <br><br>
-        <button
-          onclick="location.href='https://communitynetworks.group/'"
-          id="subscribe-button">
-          Join the Community
+        <button onclick="location.href='https://bit.ly/roadmap-updates'" id="subscribe-button">
+          &nbsp; Github Repo &nbsp;
         </button>
       </div>
     </div>
